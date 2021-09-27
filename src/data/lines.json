@@ -1,0 +1,1670 @@
+{
+  "route": {
+    "hasTollRoad": false,
+    "hasBridge": true,
+    "boundingBox": {
+      "lr": {
+        "lng": -71.207428,
+        "lat": 45.509064
+      },
+      "ul": {
+        "lng": -73.55336,
+        "lat": 46.815685
+      }
+    },
+    "distance": 166.061,
+    "hasTimedRestriction": false,
+    "hasTunnel": false,
+    "hasHighway": false,
+    "computedWaypoints": [],
+    "routeError": {
+      "errorCode": -400,
+      "message": ""
+    },
+    "formattedTime": "66:25:25",
+    "sessionId": "6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+    "hasAccessRestriction": false,
+    "realTime": 239127,
+    "hasSeasonalClosure": false,
+    "hasCountryCross": false,
+    "fuelUsed": 0,
+    "legs": [
+      {
+        "hasTollRoad": false,
+        "hasBridge": true,
+        "destNarrative": "Proceed to QUEBEC, QC.",
+        "distance": 166.061,
+        "hasTimedRestriction": false,
+        "hasTunnel": false,
+        "hasHighway": false,
+        "index": 0,
+        "formattedTime": "66:25:25",
+        "origIndex": 8,
+        "hasAccessRestriction": false,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "roadGradeStrategy": [
+          []
+        ],
+        "destIndex": 41,
+        "time": 239125,
+        "hasUnpaved": true,
+        "origNarrative": "Go north on Rue Notre-Dame.",
+        "maneuvers": [
+          {
+            "distance": 0.084,
+            "streets": [
+              "Rue Notre-Dame"
+            ],
+            "narrative": "Start out going northeast on Rue Notre-Dame toward Rue de Bonsecours.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -73.55336,
+              "lat": 45.509064
+            },
+            "index": 0,
+            "formattedTime": "00:02:01",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.509063720703125,-73.55335998535156|marker-1||45.5101318359375,-73.55252838134766|marker-2||¢er=45.50959777832031,-73.55294418334961&defaultMarker=none&zoom=13&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 121,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.057,
+            "streets": [
+              "Rue de Bonsecours"
+            ],
+            "narrative": "Turn right onto Rue de Bonsecours.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -73.552528,
+              "lat": 45.510132
+            },
+            "index": 1,
+            "formattedTime": "00:01:23",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.5101318359375,-73.55252838134766|marker-2||45.5098991394043,-73.55139923095703|marker-3||¢er=45.5100154876709,-73.55196380615234&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 83,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.011,
+            "streets": [
+              "Rue Saint-Paul"
+            ],
+            "narrative": "Turn right onto Rue Saint-Paul.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -73.551399,
+              "lat": 45.509899
+            },
+            "index": 2,
+            "formattedTime": "00:00:16",
+            "directionName": "South",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.5098991394043,-73.55139923095703|marker-3||45.50973892211914,-73.55143737792969|marker-4||¢er=45.50981903076172,-73.55141830444336&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 16,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 4
+          },
+          {
+            "distance": 0.032,
+            "streets": [
+              "Rue Bonsecours"
+            ],
+            "narrative": "Turn left onto Rue Bonsecours.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -73.551437,
+              "lat": 45.509739
+            },
+            "index": 3,
+            "formattedTime": "00:00:46",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.50973892211914,-73.55143737792969|marker-4||45.509578704833984,-73.55081176757812|marker-5||¢er=45.50965881347656,-73.5511245727539&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 46,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.009,
+            "streets": [
+              "Rue de la Commune"
+            ],
+            "narrative": "Turn left onto Rue de la Commune.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -73.550812,
+              "lat": 45.509579
+            },
+            "index": 4,
+            "formattedTime": "00:00:14",
+            "directionName": "North",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.509578704833984,-73.55081176757812|marker-5||45.50970458984375,-73.55075073242188|marker-6||¢er=45.50964164733887,-73.55078125&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 14,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 1
+          },
+          {
+            "distance": 0.033,
+            "streets": [
+              "Quai-de-l'Horloge"
+            ],
+            "narrative": "Turn right onto Quai-de-l'Horloge.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -73.550751,
+              "lat": 45.509705
+            },
+            "index": 5,
+            "formattedTime": "00:00:47",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.50970458984375,-73.55075073242188|marker-6||45.509681701660156,-73.55007934570312|marker-7||¢er=45.50969314575195,-73.5504150390625&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 47,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 5.784,
+            "streets": [
+              "Rue Port-de-Montréal"
+            ],
+            "narrative": "Turn left onto Rue Port-de-Montréal.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -73.550079,
+              "lat": 45.509682
+            },
+            "index": 6,
+            "formattedTime": "02:18:48",
+            "directionName": "North",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.509681701660156,-73.55007934570312|marker-7||45.585899353027344,-73.50588989257812|marker-8||¢er=45.54779052734375,-73.52798461914062&defaultMarker=none&zoom=7&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 8328,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 1
+          },
+          {
+            "distance": 0.101,
+            "streets": [
+              "Rue Curatteau"
+            ],
+            "narrative": "Turn left onto Rue Curatteau.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -73.50589,
+              "lat": 45.585899
+            },
+            "index": 7,
+            "formattedTime": "00:02:25",
+            "directionName": "West",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.585899353027344,-73.50588989257812|marker-8||45.585838317871094,-73.50796508789062|marker-9||¢er=45.58586883544922,-73.50692749023438&defaultMarker=none&zoom=14&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 145,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 7
+          },
+          {
+            "distance": 8.218,
+            "streets": [
+              "Rue Notre-Dame"
+            ],
+            "narrative": "Turn right onto Rue Notre-Dame.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -73.507965,
+              "lat": 45.585838
+            },
+            "index": 8,
+            "formattedTime": "03:17:13",
+            "directionName": "North",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.585838317871094,-73.50796508789062|marker-9||45.69838333129883,-73.48423767089844|marker-10||¢er=45.64211082458496,-73.49610137939453&defaultMarker=none&zoom=6&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 11833,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 1
+          },
+          {
+            "distance": 1.18,
+            "streets": [
+              "Rue Notre-Dame",
+              "QC-138"
+            ],
+            "narrative": "Enter next roundabout and take the 1st exit onto Rue Notre-Dame/QC-138.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -73.484238,
+              "lat": 45.698383
+            },
+            "index": 9,
+            "formattedTime": "00:28:20",
+            "directionName": "North",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.69838333129883,-73.48423767089844|marker-10||45.71326446533203,-73.47734069824219|marker-11||¢er=45.70582389831543,-73.48078918457031&defaultMarker=none&zoom=9&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 1700,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 1
+          },
+          {
+            "distance": 29.54,
+            "streets": [
+              "QC-138"
+            ],
+            "narrative": "Keep left at the fork to go on QC-138.",
+            "turnType": 17,
+            "startPoint": {
+              "lng": -73.477341,
+              "lat": 45.713264
+            },
+            "index": 10,
+            "formattedTime": "11:48:57",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=45.71326446533203,-73.47734069824219|marker-11||46.065147399902344,-73.18123626708984|marker-12||¢er=45.88920593261719,-73.32928848266602&defaultMarker=none&zoom=5&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 42537,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_fork_left2_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.772,
+            "streets": [
+              "Rue de Frontenac"
+            ],
+            "narrative": "Turn slight right onto Rue de Frontenac.",
+            "turnType": 1,
+            "startPoint": {
+              "lng": -73.181236,
+              "lat": 46.065147
+            },
+            "index": 11,
+            "formattedTime": "00:18:32",
+            "directionName": "North",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.065147399902344,-73.18123626708984|marker-12||46.07619094848633,-73.17908477783203|marker-13||¢er=46.070669174194336,-73.18016052246094&defaultMarker=none&zoom=10&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 1112,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_right_sm.gif",
+            "direction": 1
+          },
+          {
+            "distance": 1.218,
+            "streets": [
+              "Rue de Montcalm"
+            ],
+            "narrative": "Stay straight to go onto Rue de Montcalm.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -73.179085,
+              "lat": 46.076191
+            },
+            "index": 12,
+            "formattedTime": "00:29:15",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.07619094848633,-73.17908477783203|marker-13||46.09221649169922,-73.16903686523438|marker-14||¢er=46.08420372009277,-73.1740608215332&defaultMarker=none&zoom=9&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 1755,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.53,
+            "streets": [
+              "Rang Berthier"
+            ],
+            "narrative": "Rue de Montcalm becomes Rang Berthier.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -73.169037,
+              "lat": 46.092216
+            },
+            "index": 13,
+            "formattedTime": "00:12:44",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.09221649169922,-73.16903686523438|marker-14||46.09908676147461,-73.16411590576172|marker-15||¢er=46.095651626586914,-73.16657638549805&defaultMarker=none&zoom=10&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 764,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 18.893,
+            "streets": [
+              "QC-138"
+            ],
+            "narrative": "Turn slight right onto Rte 138/Chemin du Roy/QC-138. Continue to follow QC-138.",
+            "turnType": 1,
+            "startPoint": {
+              "lng": -73.164116,
+              "lat": 46.099087
+            },
+            "index": 14,
+            "formattedTime": "07:33:26",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.09908676147461,-73.16411590576172|marker-15||46.262107849121094,-72.87897491455078|marker-16||¢er=46.18059730529785,-73.02154541015625&defaultMarker=none&zoom=6&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 27206,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_right_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.048,
+            "streets": [
+              "Boul Saint-Laurent",
+              "QC-138"
+            ],
+            "narrative": "Turn slight left onto Boul Saint-Laurent/QC-138.",
+            "turnType": 7,
+            "startPoint": {
+              "lng": -72.878975,
+              "lat": 46.262108
+            },
+            "index": 15,
+            "formattedTime": "00:01:09",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.262107849121094,-72.87897491455078|marker-16||46.26239776611328,-72.87808990478516|marker-17||¢er=46.26225280761719,-72.87853240966797&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 69,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_left_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 9.936,
+            "streets": [
+              "QC-138"
+            ],
+            "narrative": "Enter next roundabout and take the 1st exit onto QC-138.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -72.87809,
+              "lat": 46.262398
+            },
+            "index": 16,
+            "formattedTime": "03:58:28",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.26239776611328,-72.87808990478516|marker-17||46.28607940673828,-72.68748474121094|marker-18||¢er=46.27423858642578,-72.78278732299805&defaultMarker=none&zoom=7&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 14308,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.11,
+            "streets": [
+              "Rue de la Fabrique"
+            ],
+            "narrative": "Turn left onto Rue de la Fabrique.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -72.687485,
+              "lat": 46.286079
+            },
+            "index": 17,
+            "formattedTime": "00:02:38",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.28607940673828,-72.68748474121094|marker-18||46.28739547729492,-72.68621063232422|marker-19||¢er=46.2867374420166,-72.68684768676758&defaultMarker=none&zoom=13&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 158,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.12,
+            "streets": [
+              "Rue Notre-Dame"
+            ],
+            "narrative": "Turn right onto Rue Notre-Dame.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -72.686211,
+              "lat": 46.287395
+            },
+            "index": 18,
+            "formattedTime": "00:02:52",
+            "directionName": "Southeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.28739547729492,-72.68621063232422|marker-19||46.28656768798828,-72.68401336669922|marker-20||¢er=46.2869815826416,-72.68511199951172&defaultMarker=none&zoom=14&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 172,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 5
+          },
+          {
+            "distance": 4.744,
+            "streets": [
+              "Ch Sainte-Marguerite"
+            ],
+            "narrative": "Turn left onto Ch Sainte-Marguerite.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -72.684013,
+              "lat": 46.286568
+            },
+            "index": 19,
+            "formattedTime": "01:53:52",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.28656768798828,-72.68401336669922|marker-20||46.32041931152344,-72.60623931884766|marker-21||¢er=46.30349349975586,-72.64512634277344&defaultMarker=none&zoom=8&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 6832,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.784,
+            "streets": [
+              "Boul Jean-XXIII"
+            ],
+            "narrative": "Ch Sainte-Marguerite becomes Boul Jean-XXIII.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -72.606239,
+              "lat": 46.320419
+            },
+            "index": 20,
+            "formattedTime": "00:18:49",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.32041931152344,-72.60623931884766|marker-21||46.32923889160156,-72.59642028808594|marker-22||¢er=46.3248291015625,-72.6013298034668&defaultMarker=none&zoom=10&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 1129,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 1.033,
+            "streets": [
+              "Boul Jean-XXIII"
+            ],
+            "narrative": "Keep left at the fork to continue on Boul Jean-XXIII.",
+            "turnType": 17,
+            "startPoint": {
+              "lng": -72.59642,
+              "lat": 46.329239
+            },
+            "index": 21,
+            "formattedTime": "00:24:48",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.32923889160156,-72.59642028808594|marker-22||46.3409423828125,-72.58328247070312|marker-23||¢er=46.33509063720703,-72.58985137939453&defaultMarker=none&zoom=9&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 1488,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_fork_left2_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 1.411,
+            "streets": [
+              "Rue Sainte-Marguerite"
+            ],
+            "narrative": "Boul Jean-XXIII becomes Rue Sainte-Marguerite.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -72.583282,
+              "lat": 46.340942
+            },
+            "index": 22,
+            "formattedTime": "00:33:52",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.3409423828125,-72.58328247070312|marker-23||46.34307861328125,-72.55506134033203|marker-24||¢er=46.342010498046875,-72.56917190551758&defaultMarker=none&zoom=10&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 2032,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.058,
+            "streets": [
+              "Rue Plouffe"
+            ],
+            "narrative": "Turn left onto Rue Plouffe.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -72.555061,
+              "lat": 46.343079
+            },
+            "index": 23,
+            "formattedTime": "00:01:23",
+            "directionName": "North",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.34307861328125,-72.55506134033203|marker-24||46.34389877319336,-72.5548324584961|marker-25||¢er=46.343488693237305,-72.55494689941406&defaultMarker=none&zoom=14&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 83,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 1
+          },
+          {
+            "distance": 0.077,
+            "streets": [
+              "Côte Plouffe"
+            ],
+            "narrative": "Turn right onto Côte Plouffe.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -72.554832,
+              "lat": 46.343899
+            },
+            "index": 24,
+            "formattedTime": "00:01:50",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.34389877319336,-72.5548324584961|marker-25||46.34426498413086,-72.55354309082031|marker-26||¢er=46.34408187866211,-72.5541877746582&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 110,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.13,
+            "streets": [
+              "Boul des Forges"
+            ],
+            "narrative": "Turn right onto Boul des Forges.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -72.553543,
+              "lat": 46.344265
+            },
+            "index": 25,
+            "formattedTime": "00:03:08",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.34426498413086,-72.55354309082031|marker-26||46.3438835144043,-72.5508804321289|marker-27||¢er=46.34407424926758,-72.55221176147461&defaultMarker=none&zoom=13&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 188,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.14,
+            "streets": [
+              "Rue Laflèche"
+            ],
+            "narrative": "Turn left onto Rue Laflèche.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -72.55088,
+              "lat": 46.343884
+            },
+            "index": 26,
+            "formattedTime": "00:03:22",
+            "directionName": "North",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.3438835144043,-72.5508804321289|marker-27||46.34583282470703,-72.55011749267578|marker-28||¢er=46.344858169555664,-72.55049896240234&defaultMarker=none&zoom=12&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 202,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 1
+          },
+          {
+            "distance": 0.215,
+            "streets": [
+              "Rue Cartier"
+            ],
+            "narrative": "Rue Laflèche becomes Rue Cartier.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -72.550117,
+              "lat": 46.345833
+            },
+            "index": 27,
+            "formattedTime": "00:05:09",
+            "directionName": "Northwest",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.34583282470703,-72.55011749267578|marker-28||46.34855651855469,-72.55197143554688|marker-29||¢er=46.34719467163086,-72.55104446411133&defaultMarker=none&zoom=12&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 309,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 2
+          },
+          {
+            "distance": 1.16,
+            "streets": [
+              "Boul du Saint-Maurice"
+            ],
+            "narrative": "Turn right onto Boul du Saint-Maurice.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -72.551971,
+              "lat": 46.348557
+            },
+            "index": 28,
+            "formattedTime": "00:27:50",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.34855651855469,-72.55197143554688|marker-29||46.360130310058594,-72.53446960449219|marker-30||¢er=46.35434341430664,-72.54322052001953&defaultMarker=none&zoom=9&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 1670,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.337,
+            "streets": [
+              "Chemin du Roy",
+              "Rue Fusey",
+              "QC-138"
+            ],
+            "narrative": "Boul du Saint-Maurice becomes Chemin du Roy/Rue Fusey/QC-138.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -72.53447,
+              "lat": 46.36013
+            },
+            "index": 29,
+            "formattedTime": "00:08:05",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.360130310058594,-72.53446960449219|marker-30||46.36368179321289,-72.52964782714844|marker-31||¢er=46.36190605163574,-72.53205871582031&defaultMarker=none&zoom=11&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 485,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.478,
+            "streets": [
+              "Rue Notre-Dame",
+              "Chemin du Roy"
+            ],
+            "narrative": "Turn right onto Rue Notre-Dame/Chemin du Roy.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -72.529648,
+              "lat": 46.363682
+            },
+            "index": 30,
+            "formattedTime": "00:11:28",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.36368179321289,-72.52964782714844|marker-31||46.361488342285156,-72.52021026611328|marker-32||¢er=46.36258506774902,-72.52492904663086&defaultMarker=none&zoom=11&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 688,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.178,
+            "streets": [
+              "Rue Saint-Jean-Baptiste"
+            ],
+            "narrative": "Turn slight left onto Rue Saint-Jean-Baptiste.",
+            "turnType": 7,
+            "startPoint": {
+              "lng": -72.52021,
+              "lat": 46.361488
+            },
+            "index": 31,
+            "formattedTime": "00:04:16",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.361488342285156,-72.52021026611328|marker-32||46.360931396484375,-72.51659393310547|marker-33||¢er=46.361209869384766,-72.51840209960938&defaultMarker=none&zoom=13&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 256,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_left_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.023,
+            "streets": [
+              "Rue Paré"
+            ],
+            "narrative": "Turn left onto Rue Paré.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -72.516594,
+              "lat": 46.360931
+            },
+            "index": 32,
+            "formattedTime": "00:00:33",
+            "directionName": "North",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.360931396484375,-72.51659393310547|marker-33||46.361263275146484,-72.5165786743164|marker-34||¢er=46.36109733581543,-72.51658630371094&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 33,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 1
+          },
+          {
+            "distance": 1.547,
+            "streets": [
+              "Boul Sainte-Madeleine"
+            ],
+            "narrative": "Turn right onto Boul Sainte-Madeleine.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -72.516579,
+              "lat": 46.361263
+            },
+            "index": 33,
+            "formattedTime": "00:37:08",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.361263275146484,-72.5165786743164|marker-34||46.37617874145508,-72.49269104003906|marker-35||¢er=46.36872100830078,-72.50463485717773&defaultMarker=none&zoom=9&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 2228,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 29.382,
+            "streets": [
+              "QC-138"
+            ],
+            "narrative": "Boul Sainte-Madeleine becomes QC-138.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -72.492691,
+              "lat": 46.376179
+            },
+            "index": 34,
+            "formattedTime": "11:45:10",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.37617874145508,-72.49269104003906|marker-35||46.59223937988281,-72.049560546875|marker-36||¢er=46.484209060668945,-72.27112579345703&defaultMarker=none&zoom=5&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 42310,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 1.389,
+            "streets": [
+              "Chemin du Roy"
+            ],
+            "narrative": "Turn slight left onto Rte du Quai/Chemin du Roy. Continue to follow Chemin du Roy.",
+            "turnType": 7,
+            "startPoint": {
+              "lng": -72.049561,
+              "lat": 46.592239
+            },
+            "index": 35,
+            "formattedTime": "00:33:20",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.59223937988281,-72.049560546875|marker-36||46.59956359863281,-72.02410888671875|marker-37||¢er=46.59590148925781,-72.03683471679688&defaultMarker=none&zoom=10&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 2000,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_left_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.029,
+            "streets": [
+              "Ch Sir-Lomer-Gouin",
+              "Chemin du Roy"
+            ],
+            "narrative": "Turn right onto Ch Sir-Lomer-Gouin/Chemin du Roy.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -72.024109,
+              "lat": 46.599564
+            },
+            "index": 36,
+            "formattedTime": "00:00:41",
+            "directionName": "Southeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.59956359863281,-72.02410888671875|marker-37||46.599300384521484,-72.02364349365234|marker-38||¢er=46.59943199157715,-72.02387619018555&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 41,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 5
+          },
+          {
+            "distance": 25.182,
+            "streets": [
+              "QC-138"
+            ],
+            "narrative": "Turn left onto Ch du Roy/Chemin du Roy/QC-138. Continue to follow QC-138.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -72.023643,
+              "lat": 46.5993
+            },
+            "index": 37,
+            "formattedTime": "10:04:22",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.599300384521484,-72.02364349365234|marker-38||46.696834564208984,-71.59105682373047|marker-39||¢er=46.648067474365234,-71.8073501586914&defaultMarker=none&zoom=6&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 36262,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 2.138,
+            "streets": [
+              "Rue Des Érables"
+            ],
+            "narrative": "Turn left onto Rue Des Érables (Portions unpaved).",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -71.591057,
+              "lat": 46.696835
+            },
+            "index": 38,
+            "formattedTime": "00:51:18",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.696834564208984,-71.59105682373047|marker-39||46.713226318359375,-71.55647277832031|marker-40||¢er=46.70503044128418,-71.57376480102539&defaultMarker=none&zoom=9&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 2,
+            "time": 3078,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 6.564,
+            "streets": [
+              "Rte 138",
+              "QC-138"
+            ],
+            "narrative": "Turn left onto Rte 138/Chemin du Roy/QC-138. Continue to follow Rte 138/QC-138.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -71.556473,
+              "lat": 46.713226
+            },
+            "index": 39,
+            "formattedTime": "02:37:32",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.713226318359375,-71.55647277832031|marker-40||46.750736236572266,-71.43304443359375|marker-41||¢er=46.73198127746582,-71.49475860595703&defaultMarker=none&zoom=7&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 9452,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 4.485,
+            "streets": [
+              "QC-138"
+            ],
+            "narrative": "Keep left at the fork to go on QC-138.",
+            "turnType": 17,
+            "startPoint": {
+              "lng": -71.433044,
+              "lat": 46.750736
+            },
+            "index": 40,
+            "formattedTime": "01:47:38",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.750736236572266,-71.43304443359375|marker-41||46.78782272338867,-71.35631561279297|marker-42||¢er=46.76927947998047,-71.39468002319336&defaultMarker=none&zoom=8&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 6458,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_fork_left2_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 4.435,
+            "streets": [
+              "Boul Wilfrid-Hamel",
+              "QC-138"
+            ],
+            "narrative": "Keep left at the fork to go on Boul Wilfrid-Hamel/QC-138.",
+            "turnType": 17,
+            "startPoint": {
+              "lng": -71.356316,
+              "lat": 46.787823
+            },
+            "index": 41,
+            "formattedTime": "01:46:26",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [
+              {
+                "extraText": "",
+                "text": "138",
+                "type": 22,
+                "url": "http://icons.mqcdn.com/icons/rs22.png?n=138",
+                "direction": 0
+              }
+            ],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.78782272338867,-71.35631561279297|marker-42||46.80636978149414,-71.27418518066406|marker-43||¢er=46.797096252441406,-71.31525039672852&defaultMarker=none&zoom=8&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 1024,
+            "time": 6386,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_fork_left2_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.016,
+            "streets": [
+              "Rue des Ingénieurs"
+            ],
+            "narrative": "Turn right onto Rue des Ingénieurs.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -71.274185,
+              "lat": 46.80637
+            },
+            "index": 42,
+            "formattedTime": "00:00:23",
+            "directionName": "Southeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.80636978149414,-71.27418518066406|marker-43||46.8061637878418,-71.27405548095703|marker-44||¢er=46.80626678466797,-71.27412033081055&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 23,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 5
+          },
+          {
+            "distance": 0.273,
+            "streets": [
+              "Rue des Ingénieurs"
+            ],
+            "narrative": "Turn left to stay on Rue des Ingénieurs.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -71.274055,
+              "lat": 46.806164
+            },
+            "index": 43,
+            "formattedTime": "00:06:33",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.8061637878418,-71.27405548095703|marker-44||46.80702590942383,-71.26851654052734|marker-45||¢er=46.80659484863281,-71.27128601074219&defaultMarker=none&zoom=12&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 393,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.102,
+            "streets": [
+              "Av Saint-Sacrement"
+            ],
+            "narrative": "Turn right onto Av Saint-Sacrement.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -71.268517,
+              "lat": 46.807026
+            },
+            "index": 44,
+            "formattedTime": "00:02:27",
+            "directionName": "Southeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.80702590942383,-71.26851654052734|marker-45||46.80624008178711,-71.26670837402344|marker-46||¢er=46.80663299560547,-71.26761245727539&defaultMarker=none&zoom=14&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 147,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 5
+          },
+          {
+            "distance": 1.757,
+            "streets": [
+              "Rue Saint-Vallier"
+            ],
+            "narrative": "Turn left onto Rue Saint-Vallier.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -71.266708,
+              "lat": 46.80624
+            },
+            "index": 45,
+            "formattedTime": "00:42:11",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.80624008178711,-71.26670837402344|marker-46||46.811134338378906,-71.23230743408203|marker-47||¢er=46.80868721008301,-71.24950790405273&defaultMarker=none&zoom=9&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 2531,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.078,
+            "streets": [
+              "Boul Charest"
+            ],
+            "narrative": "Turn left onto Boul Charest.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -71.232307,
+              "lat": 46.811134
+            },
+            "index": 46,
+            "formattedTime": "00:01:52",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.811134338378906,-71.23230743408203|marker-47||46.811275482177734,-71.2307357788086|marker-48||¢er=46.81120491027832,-71.23152160644531&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 112,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.013,
+            "streets": [
+              "Rue de Saint-Vallier"
+            ],
+            "narrative": "Turn slight right onto Rue de Saint-Vallier.",
+            "turnType": 1,
+            "startPoint": {
+              "lng": -71.230736,
+              "lat": 46.811275
+            },
+            "index": 47,
+            "formattedTime": "00:00:19",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.811275482177734,-71.2307357788086|marker-48||46.81122970581055,-71.23046112060547|marker-49||¢er=46.81125259399414,-71.23059844970703&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 19,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_right_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.336,
+            "streets": [
+              "Rue Saint-Vallier"
+            ],
+            "narrative": "Rue de Saint-Vallier becomes Rue Saint-Vallier.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -71.230461,
+              "lat": 46.81123
+            },
+            "index": 48,
+            "formattedTime": "00:08:04",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.81122970581055,-71.23046112060547|marker-49||46.81194305419922,-71.22356414794922|marker-50||¢er=46.81158638000488,-71.22701263427734&defaultMarker=none&zoom=12&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 484,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.487,
+            "streets": [
+              "Rue Saint-Vallier"
+            ],
+            "narrative": "Turn slight left to stay on Rue Saint-Vallier.",
+            "turnType": 7,
+            "startPoint": {
+              "lng": -71.223564,
+              "lat": 46.811943
+            },
+            "index": 49,
+            "formattedTime": "00:11:41",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.81194305419922,-71.22356414794922|marker-50||46.81519317626953,-71.21453094482422|marker-51||¢er=46.813568115234375,-71.21904754638672&defaultMarker=none&zoom=11&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 701,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_slight_left_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.077,
+            "streets": [],
+            "narrative": "Stay straight to go onto walkway. Proceed northeast (See map for details).",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -71.214531,
+              "lat": 46.815193
+            },
+            "index": 50,
+            "formattedTime": "00:01:51",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.81519317626953,-71.21453094482422|marker-51||46.8156852722168,-71.21308135986328|marker-52||¢er=46.815439224243164,-71.21380615234375&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 111,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.007,
+            "streets": [
+              "Rue Saint-Nicolas"
+            ],
+            "narrative": "Turn right onto Rue Saint-Nicolas.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -71.213081,
+              "lat": 46.815685
+            },
+            "index": 51,
+            "formattedTime": "00:00:10",
+            "directionName": "Southeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.8156852722168,-71.21308135986328|marker-52||46.81559371948242,-71.21300506591797|marker-53||¢er=46.81563949584961,-71.21304321289062&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 10,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 5
+          },
+          {
+            "distance": 0.023,
+            "streets": [
+              "Côte de la Potasse"
+            ],
+            "narrative": "Turn left onto Côte de la Potasse.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -71.213005,
+              "lat": 46.815594
+            },
+            "index": 52,
+            "formattedTime": "00:00:34",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.81559371948242,-71.21300506591797|marker-53||46.81566619873047,-71.2125244140625|marker-54||¢er=46.815629959106445,-71.21276473999023&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 34,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.116,
+            "streets": [
+              "Côte du Palais"
+            ],
+            "narrative": "Côte de la Potasse becomes Côte du Palais.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -71.212524,
+              "lat": 46.815666
+            },
+            "index": 53,
+            "formattedTime": "00:02:46",
+            "directionName": "Southeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.81566619873047,-71.2125244140625|marker-54||46.814674377441406,-71.21067810058594|marker-55||¢er=46.81517028808594,-71.21160125732422&defaultMarker=none&zoom=13&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 166,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 5
+          },
+          {
+            "distance": 0.04,
+            "streets": [
+              "Rue Charlevoix"
+            ],
+            "narrative": "Turn left onto Rue Charlevoix.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -71.210678,
+              "lat": 46.814674
+            },
+            "index": 54,
+            "formattedTime": "00:00:57",
+            "directionName": "Northeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.814674377441406,-71.21067810058594|marker-55||46.815032958984375,-71.21002197265625|marker-56||¢er=46.81485366821289,-71.2103500366211&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 57,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 3
+          },
+          {
+            "distance": 0.044,
+            "streets": [
+              "Rue de l' Hôtel-Dieu"
+            ],
+            "narrative": "Turn right onto Rue de l' Hôtel-Dieu.",
+            "turnType": 2,
+            "startPoint": {
+              "lng": -71.210022,
+              "lat": 46.815033
+            },
+            "index": 55,
+            "formattedTime": "00:01:04",
+            "directionName": "Southeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.815032958984375,-71.21002197265625|marker-56||46.81460189819336,-71.2093276977539|marker-57||¢er=46.81481742858887,-71.20967483520508&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 64,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+            "direction": 5
+          },
+          {
+            "distance": 0.026,
+            "streets": [
+              "Rue Saint-Jean"
+            ],
+            "narrative": "Turn left onto Rue Saint-Jean.",
+            "turnType": 6,
+            "startPoint": {
+              "lng": -71.209328,
+              "lat": 46.814602
+            },
+            "index": 56,
+            "formattedTime": "00:00:37",
+            "directionName": "East",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.81460189819336,-71.2093276977539|marker-57||46.8145866394043,-71.20880126953125|marker-58||¢er=46.81459426879883,-71.20906448364258&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 37,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+            "direction": 8
+          },
+          {
+            "distance": 0.071,
+            "streets": [
+              "Côte de la Fabrique"
+            ],
+            "narrative": "Rue Saint-Jean becomes Côte de la Fabrique.",
+            "turnType": 0,
+            "startPoint": {
+              "lng": -71.208801,
+              "lat": 46.814587
+            },
+            "index": 57,
+            "formattedTime": "00:01:42",
+            "directionName": "Southeast",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24&size=225,160&locations=46.8145866394043,-71.20880126953125|marker-58||46.81418228149414,-71.20742797851562|marker-59||¢er=46.81438446044922,-71.20811462402344&defaultMarker=none&zoom=15&rand=-978703339&session=6150c651-03de-6750-02b4-32ca-1265dd3605e3",
+            "transportMode": "WALKING",
+            "attributes": 0,
+            "time": 102,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+            "direction": 5
+          },
+          {
+            "distance": 0,
+            "streets": [],
+            "narrative": "Welcome to QUEBEC, QC.",
+            "turnType": -1,
+            "startPoint": {
+              "lng": -71.207428,
+              "lat": 46.814182
+            },
+            "index": 58,
+            "formattedTime": "00:00:00",
+            "directionName": "",
+            "maneuverNotes": [],
+            "linkIds": [],
+            "signs": [],
+            "transportMode": "AUTO",
+            "attributes": 0,
+            "time": 0,
+            "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+            "direction": 0
+          }
+        ],
+        "hasFerry": false
+      }
+    ],
+    "options": {
+      "arteryWeights": [],
+      "cyclingRoadFactor": 1,
+      "timeType": 0,
+      "useTraffic": false,
+      "returnLinkDirections": false,
+      "countryBoundaryDisplay": true,
+      "enhancedNarrative": false,
+      "locale": "en_US",
+      "tryAvoidLinkIds": [],
+      "drivingStyle": 2,
+      "doReverseGeocode": false,
+      "generalize": -1,
+      "mustAvoidLinkIds": [],
+      "sideOfStreetDisplay": true,
+      "routeType": "PEDESTRIAN",
+      "avoidTimedConditions": false,
+      "routeNumber": 0,
+      "shapeFormat": "raw",
+      "maxWalkingDistance": -1,
+      "destinationManeuverDisplay": true,
+      "transferPenalty": -1,
+      "narrativeType": "text",
+      "walkingSpeed": -1,
+      "urbanAvoidFactor": -1,
+      "stateBoundaryDisplay": true,
+      "unit": "M",
+      "highwayEfficiency": 22,
+      "maxLinkId": 0,
+      "maneuverPenalty": -1,
+      "avoidTripIds": [],
+      "filterZoneFactor": -1,
+      "manmaps": "true"
+    },
+    "locations": [
+      {
+        "dragPoint": false,
+        "displayLatLng": {
+          "lng": -73.55336,
+          "lat": 45.509064
+        },
+        "adminArea4": "",
+        "adminArea5": "Montreal",
+        "postalCode": "",
+        "adminArea1": "CA",
+        "adminArea3": "QC",
+        "type": "s",
+        "sideOfStreet": "N",
+        "geocodeQualityCode": "A5XAX",
+        "adminArea4Type": "County",
+        "linkId": 26929259,
+        "street": "",
+        "adminArea5Type": "City",
+        "geocodeQuality": "CITY",
+        "adminArea1Type": "Country",
+        "adminArea3Type": "State",
+        "latLng": {
+          "lng": -73.553363,
+          "lat": 45.509062
+        }
+      },
+      {
+        "dragPoint": false,
+        "displayLatLng": {
+          "lng": -71.207428,
+          "lat": 46.814182
+        },
+        "adminArea4": "",
+        "adminArea5": "Quebec",
+        "postalCode": "",
+        "adminArea1": "CA",
+        "adminArea3": "QC",
+        "type": "s",
+        "sideOfStreet": "N",
+        "geocodeQualityCode": "A5XAX",
+        "adminArea4Type": "County",
+        "linkId": 61894663,
+        "street": "",
+        "adminArea5Type": "City",
+        "geocodeQuality": "CITY",
+        "adminArea1Type": "Country",
+        "adminArea3Type": "State",
+        "latLng": {
+          "lng": -71.207425,
+          "lat": 46.814184
+        }
+      }
+    ],
+    "time": 239125,
+    "hasUnpaved": true,
+    "locationSequence": [
+      0,
+      1
+    ],
+    "hasFerry": false
+  },
+  "info": {
+    "statuscode": 0,
+    "copyright": {
+      "imageAltText": "© 2021 MapQuest, Inc.",
+      "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+      "text": "© 2021 MapQuest, Inc."
+    },
+    "messages": []
+  }
+}
