@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import {
-  Map,
+  MapContainer,
   Marker,
   Popup,
   TileLayer,
   Polyline,
+  useMapEvents,
+
   //Rectangle,
 } from "react-leaflet";
+
 import { Icon } from "leaflet";
 //import * as parkData from "./data/skateboard-parks.json";
 //import * as lines from "./data/lines.json";
@@ -59,13 +62,33 @@ const MainButton = styled.button`
   }
 `;
 
+function LocationMarker() {
+  const [position, setPosition] = useState(null);
+  const map = useMapEvents({
+    click() {
+      map.locate();
+    },
+    locationfound(e) {
+      setPosition(e.latlng);
+      map.flyTo(e.latlng, map.getZoom());
+    },
+  });
+
+  return position === null ? null : (
+    <Marker position={position} removable editable>
+      <Popup>You are here</Popup>
+    </Marker>
+  );
+}
+
 export default function App() {
   const [keyword, setKeyword] = useState("");
   const [steps, setSteps] = useState("");
   const [kms, setKms] = useState("");
   const [distance, setDistance] = useState(Number("2"));
-  const [position, setPosition] = useState([]);
+  const [positionD, setPositionD] = useState([]);
   console.log(distance);
+
   //const [activePark, setActivePark] = React.useState(null);
 
   //const [lat, setLat] = useState("19.0333");
@@ -394,7 +417,7 @@ export default function App() {
 
   useEffect(() => {
     let frty = valg(distance);
-    setPosition(frty);
+    setPositionD(frty);
   }, [distance]);
 
   //console.log(frty, "accc");
@@ -478,12 +501,16 @@ export default function App() {
 
           <Sidebar />
 
-          <Map center={[50.79961, -90.0839]} zoom={5}>
+          <MapContainer
+            center={[50.79961, -90.0839]}
+            zoom={5}
+            /* scrollWheelZoom={false} */
+          >
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             />
-
+            <LocationMarker />
             {/* <Polyline pathOptions={limeOptions} positions={der} /> */}
             {/*   <Polyline pathOptions={limeOptions} positions={shapePoints} /> */}
             <Polyline pathOptions={limeOptions} positions={newRout} />
@@ -501,7 +528,7 @@ export default function App() {
                 A pretty CSS3 popup. <br /> Easily customizable.
               </Popup>
             </Marker>
-            <Marker position={position} />
+            <Marker position={positionD} />
             {/* reco */}
             {/* icon={icon} */}
 
@@ -535,7 +562,7 @@ export default function App() {
             </div>
           </Popup>
         )} */}
-          </Map>
+          </MapContainer>
           {/*       <MapquestOne
         height="80vh"
         width="100%"
