@@ -5,7 +5,6 @@ import {
   Popup,
   TileLayer,
   Polyline,
-  useMapEvents,
 
   //Rectangle,
 } from "react-leaflet";
@@ -18,6 +17,7 @@ import LatLon from "geodesy/latlon-spherical.js";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import styled from "styled-components";
+import LocationMarker from "./components/ZoomMap";
 
 //import MapquestOne from "./components/mapquestone/mapquestOne";
 
@@ -62,31 +62,20 @@ const MainButton = styled.button`
   }
 `;
 
-function LocationMarker() {
-  const [position, setPosition] = useState(null);
-  const map = useMapEvents({
-    click() {
-      map.locate();
-    },
-    locationfound(e) {
-      setPosition(e.latlng);
-      map.flyTo(e.latlng, map.getZoom());
-    },
-  });
-
-  return position === null ? null : (
-    <Marker position={position} removable editable>
-      <Popup>You are here</Popup>
-    </Marker>
-  );
-}
-
 export default function App() {
   const [keyword, setKeyword] = useState("");
   const [steps, setSteps] = useState("");
   const [kms, setKms] = useState("");
   const [distance, setDistance] = useState(Number("2"));
   const [positionD, setPositionD] = useState([]);
+
+  const [initialSet, setInitialSet] = useState({
+    center: [50.79961, -90.0839],
+    zoom: 5,
+    zoomT: 13,
+    map: null,
+  });
+
   console.log(distance);
 
   //const [activePark, setActivePark] = React.useState(null);
@@ -418,6 +407,10 @@ export default function App() {
   useEffect(() => {
     let frty = valg(distance);
     setPositionD(frty);
+
+    setInitialSet({ ...initialSet, center: frty });
+    const { map } = initialSet;
+    if (map) map.flyTo(frty, 7.5);
   }, [distance]);
 
   //console.log(frty, "accc");
@@ -502,15 +495,16 @@ export default function App() {
           <Sidebar />
 
           <MapContainer
-            center={[50.79961, -90.0839]}
-            zoom={5}
+            center={initialSet.center}
+            zoom={initialSet.zoom}
+            whenCreated={(map) => setInitialSet({ map })}
             /* scrollWheelZoom={false} */
           >
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             />
-            <LocationMarker />
+            {/* <LocationMarker func={clicked} posi={positionD} /> */}
             {/* <Polyline pathOptions={limeOptions} positions={der} /> */}
             {/*   <Polyline pathOptions={limeOptions} positions={shapePoints} /> */}
             <Polyline pathOptions={limeOptions} positions={newRout} />
