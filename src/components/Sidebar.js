@@ -1,11 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import { SidebarData } from "./SidebarData";
-import SubMenu from "./SubMenu";
-import { IconContext } from "react-icons/lib";
+
 import Logo from "../assets/LogoMakr-8XfQrq.png";
 import LogoName from "../assets/Walk-4.png";
 import LogoInfo from "../assets/LogoMakr-5nV5yy.png";
@@ -71,32 +66,6 @@ const NavThree = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-`;
-
-const NavIcon = styled(Link)`
-  margin-left: 2rem;
-  font-size: 2rem;
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-`;
-
-const SidebarNav = styled.nav`
-  background: #15171c;
-  width: 250px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 350ms;
-  z-index: 10;
-`;
-
-const SidebarWrap = styled.div`
-  width: 100%;
 `;
 
 const LogoIm = styled.img`

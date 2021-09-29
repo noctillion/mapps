@@ -12,14 +12,11 @@ import {
 import { Icon } from "leaflet";
 //import * as parkData from "./data/skateboard-parks.json";
 //import * as lines from "./data/lines.json";
-import * as routedata from "./data/data.json";
+//import * as routedata from "./data/data.json";
 import LatLon from "geodesy/latlon-spherical.js";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import styled from "styled-components";
-//import LocationMarker from "./components/ZoomMap";
-
-//import MapquestOne from "./components/mapquestone/mapquestOne";
 
 export const icon = new Icon({
   iconUrl: "address.svg", //"/skateboarding.svg",address.svg, LogoMakr-5RTw5R.png
@@ -66,12 +63,16 @@ export default function App() {
   const [keyword, setKeyword] = useState("");
   const [steps, setSteps] = useState("");
   const [kms, setKms] = useState("");
-  const [distance, setDistance] = useState(Number("2"));
+  const [distance, setDistance] = useState(null);
   const [positionD, setPositionD] = useState([]);
   const [newRoutD, setnewRoutD] = useState([]);
   const [letsseeM, setletsseeM] = useState([]);
-
-  console.log(letsseeM, "letsseeM");
+  const [lastPoint, setLastPoint] = useState([]);
+  const [setNewDistance] = useState([]);
+  const [lastCummDistance, setLastCummDistance] = useState(null);
+  const [remainingDista, setRemainingDista] = useState(null);
+  const [contribNu, setContribNu] = useState(null);
+  const [disabled, setDisabled] = useState(false);
 
   const [initialSet, setInitialSet] = useState({
     center: [50.79961, -90.0839],
@@ -79,7 +80,7 @@ export default function App() {
     map: null,
   });
 
-  console.log(distance);
+  console.log(distance, "fffdistanmce");
 
   const chunk = (arr) => {
     const size = 2;
@@ -105,8 +106,6 @@ export default function App() {
       //const reco = p1.destinationPoint(dist, b1);
       accu.push({ p1: p1f, p2: p2f, b1: b1, dist: d });
     }
-    console.log(accu, "accu");
-
     const accumulate = (arr) =>
       arr.map(
         (
@@ -130,15 +129,33 @@ export default function App() {
       try {
         const data = await fetch("http://localhost:8800/api/corridor");
         const response = await data.json();
-        //console.log(response, "response");
         var result = chunk(response[0].shapePoints);
-        //console.log(result, "result");
         setnewRoutD(result);
         let letsseeMs = cons(result);
 
         setletsseeM(letsseeMs);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchD();
+  }, []);
 
-        //console.log(letsseeM, "letsseeM ");
+  useEffect(() => {
+    const fetchD = async () => {
+      try {
+        const data = await fetch("http://localhost:8800/api/pins");
+        const response = await data.json();
+        const lastPointM = response.splice(-1).pop();
+        //console.log(lastPointM, "responseCoord");
+
+        setLastPoint(response);
+        setPositionD(lastPointM.latlong);
+        setLastCummDistance(lastPointM.cummulatedDistance);
+        setDistance(
+          Math.trunc((7432669.473190754 - lastPointM.cummulatedDistance) / 1000)
+        );
+        setContribNu(response.length);
       } catch (error) {
         console.log(error);
       }
@@ -148,57 +165,32 @@ export default function App() {
 
   //const [activePark, setActivePark] = React.useState(null);
 
-  //const [lat, setLat] = useState("19.0333");
-  //const [lng, setLng] = useState("-98.1833");
-
   const limeOptions = { color: "red" };
-  //const blackOptions = { color: "black" };
-  /*   const polyline = [
-    [45.383321536272049, -75.3372987731628],
-    [45.467134581917357, -75.546518086577947],
-    [45.295014379864874, -75.898610599532319],
-    [45.345566668964558, -75.760933332842754],
-  ]; */
-
-  /*  const rectangle = [
-    [45.383321536272049, -75.3372987731628],
-    [45.467134581917357, -75.546518086577947],
-  ]; */
-
-  /*  const der = lines.route.legs[0].maneuvers.map((elem) => {
-    return Object.values(elem.startPoint).reverse();
-  }); */
-
-  /*   const chunk = (arr) => {
-    const size = 2;
-    const chunkedArray = [];
-    for (let i = 0; i < arr.length; i++) {
-      const last = chunkedArray[chunkedArray.length - 1];
-      if (!last || last.length === size) {
-        chunkedArray.push([arr[i]]);
-      } else {
-        last.push(arr[i]);
-      }
-    }
-    return chunkedArray;
-  }; */
-
-  //console.log(routedata, "routedataDeData");
 
   //let newRout = chunk(routedataD[0].shapePoints);
-  let newRout = chunk(routedata.shapePoints);
+  //let newRout = chunk(routedata.shapePoints);
 
   //console.log(der);
 
-  useEffect(() => {}, []);
+  //let letssee = cons(newRout);
 
-  let letssee = cons(newRout);
+  let valg = (dist, arr) => {
+    let x = arr.filter((a, i) => {
+      if (a.acum <= dist) {
+        return a;
+      } else {
+        return false;
+      }
+    });
 
-  /*   let b1null = letssee
-    .filter((elem) => Number.isNaN(elem.b1))
-    .map((elem) => elem.id); */
+    let vaf = arr[x.splice(-1).pop().id + 1];
+    const reco = vaf.p1.destinationPoint(vaf.acum - dist, vaf.b1);
+    const posti = Object.values(reco);
 
-  let valg = (dist) => {
+    return posti;
+  };
+
+  /*  let valg = (dist) => {
     let x = letssee.filter((a, i) => {
       if (a.acum <= dist) {
         return a;
@@ -212,8 +204,8 @@ export default function App() {
     const posti = Object.values(reco);
 
     return posti;
-  };
-
+  }; */
+  /* 
   let valgCD = (dist, letseeArr) => {
     let x = letseeArr.filter((a, i) => {
       if (a.acum <= dist) {
@@ -228,50 +220,70 @@ export default function App() {
     const posti = Object.values(reco);
 
     return posti;
-  };
+  }; */
 
   /*  useEffect(() => {
-    let frty = valg(distance);
-    setPositionD(frty);
-
-    setInitialSet({ ...initialSet, center: frty });
+    //setInitialSet({ ...initialSet, center: frty });
     const { map } = initialSet;
-    if (map) map.flyTo(frty, 7.5);
-  }, [distance]);
- */
+    if (map) map.flyTo(positionD, 9.5);
+  }, [distance]); */
 
   useEffect(() => {
-    let frty = valg(distance);
-    setPositionD(frty);
-
-    setInitialSet({ ...initialSet, center: frty });
-    const { map } = initialSet;
-    if (map) map.flyTo(frty, 7.5);
+    let remainD = Math.trunc(7432669.473190754 / 1000) - distance;
+    setRemainingDista(remainD);
   }, [distance]);
 
-  //console.log(frty, "accc");
+  /*  useEffect(() => {
+    let contrib = lastPoint.length;
+    setContribNu(contrib);
+  }, [lastPoint, contribNu]); */
 
-  /* const p1 = new LatLon(newRout[0][0], newRout[0][1]);
-  const p2 = new LatLon(newRout[1][0], newRout[1][1]);
-  const b1 = p1.initialBearingTo(p2); // 9.1419°
+  const Consolidate = async (data) => {
+    const res = await fetch("http://localhost:8800/api/pins", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => res.json());
+    /* .then((res) => console.log(res)); */
+    const response = res;
+    setNewDistance(response);
 
-  console.log(newRout[1][0], "ohh");
-
-  const d = p1.distanceTo(p2);
-  console.log(d, "dis");
-
-  const dist = 55000;
-
-  const reco = p1.destinationPoint(dist, b1);
-
-  const posti = Object.values(reco);
-
-  console.log(posti, "reco"); */
+    //setDataToProviderConsolidated(response);
+  };
 
   const sendData = (event) => {
     event.preventDefault();
+    /////
+
+    ////
+    let currDist = lastCummDistance;
+    console.log(currDist, "currDist");
+    let tempDist = null;
     if (keyword === "wounding") {
-      setDistance(kms);
+      if (kms) {
+        tempDist = Number(kms) * 1000 + currDist;
+      }
+      if (steps) {
+        tempDist = (Number(steps) / 1312) * 1000 + currDist;
+      }
+
+      console.log(tempDist, "tempDisttempDist");
+      setContribNu(lastPoint.length + 1);
+      setDistance(Math.trunc((7432669.473190754 - tempDist) / 1000));
+      let frty = valg(tempDist, letsseeM);
+      console.log(frty, "frtyfrty");
+      setPositionD(frty);
+      Consolidate({
+        latlong: frty,
+        cummulatedDistance: tempDist,
+        newDistance: Number(kms),
+      });
+      const { map } = initialSet;
+      if (map) map.flyTo(frty, 9.5);
+      setDisabled(true);
     } else if (keyword !== "wounding") {
       alert("Please write the rigth keyword");
     }
@@ -303,6 +315,7 @@ export default function App() {
                 name="keyword"
                 onChange={(e) => setKeyword(e.target.value)}
                 required
+                disabled={disabled}
               />
               <input
                 type="text"
@@ -312,6 +325,7 @@ export default function App() {
                 id="destination"
                 placeholder="steps"
                 onChange={(e) => setSteps(e.target.value)}
+                disabled={kms ? !disabled : disabled}
               />
               <div style={{ color: "white" }}>or</div>
               <input
@@ -322,16 +336,16 @@ export default function App() {
                 id="destinationkm"
                 placeholder="km"
                 onChange={(e) => setKms(e.target.value)}
+                disabled={steps ? !disabled : disabled}
               />
               <MainButton type="submit">Submit</MainButton>
-              {/* <button type="submit">Get Directions</button> */}
             </form>
           </div>
           <div className="blackScreen">
             <div className="innerScreen">
-              <span>Distance left: 23456 km</span>
-              <span>Distance covered: 456 km</span>
-              <span>Number of contributions: 56745</span>
+              <span>Distance left: {distance} km</span>
+              <span>Distance covered: {remainingDista} km</span>
+              <span>Number of contributions: {contribNu}</span>
             </div>
           </div>
 
@@ -347,67 +361,34 @@ export default function App() {
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             />
-            {/* <LocationMarker func={clicked} posi={positionD} /> */}
-            {/* <Polyline pathOptions={limeOptions} positions={der} /> */}
-            {/*   <Polyline pathOptions={limeOptions} positions={shapePoints} /> */}
+
             <Polyline pathOptions={limeOptions} positions={newRoutD} />
-            {/* Route Shape */}
-            {/*  <Rectangle bounds={rectangle} pathOptions={blackOptions} /> */}
-            {/* <Marker position={[47.563034, -52.710678]} />
-        <Marker position={[47.540806, -52.724449]} /> */}
-            <Marker position={newRout[0]} icon={start}>
-              <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
-              </Popup>
-            </Marker>
-            <Marker position={newRout.slice(-1).pop()} icon={end}>
-              <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
-              </Popup>
-            </Marker>
-            <Marker position={positionD} />
-            {/* reco */}
-            {/* icon={icon} */}
 
-            {/* {parkData.features.map((park) => (
-          <Marker
-            key={park.properties.PARK_ID}
-            position={[
-              park.geometry.coordinates[1],
-              park.geometry.coordinates[0],
-            ]}
-            onClick={() => {
-              setActivePark(park);
-            }}
-            icon={icon}
-          />
-        ))}
-
-        {activePark && (
-          <Popup
-            position={[
-              activePark.geometry.coordinates[1],
-              activePark.geometry.coordinates[0],
-            ]}
-            onClose={() => {
-              setActivePark(null);
-            }}
-          >
-            <div>
-              <h2>{activePark.properties.NAME}</h2>
-              <p>{activePark.properties.DESCRIPTIO}</p>
-            </div>
-          </Popup>
-        )} */}
+            {newRoutD.length > 0 ? (
+              <>
+                {" "}
+                <Marker position={newRoutD[0]} icon={start}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
+                <Marker position={newRoutD.slice(-1).pop()} icon={end}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
+              </>
+            ) : null}
+            {positionD.length > 0 ? (
+              <>
+                <Marker position={positionD}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
+              </>
+            ) : null}
           </MapContainer>
-          {/*       <MapquestOne
-        height="80vh"
-        width="100%"
-        center={[lat, lng]}
-        tileLayer={"map"}
-        zoom={12}
-        apiKey="GTM0fLDaKICVG6X5xJfvkTtGMGB8Zgx4"
-      /> */}
         </div>
       </div>
     </>

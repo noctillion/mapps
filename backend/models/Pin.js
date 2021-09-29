@@ -3,15 +3,16 @@ const AutoIncrement = require("mongoose-sequence")(mongoose);
 
 const PinSchema = new mongoose.Schema(
   {
-    lat: {
-      type: Number,
+    latlong: {
+      type: Array,
       required: true,
     },
-    long: {
-      type: Number,
-      required: true,
-    },
+
     cummulatedDistance: {
+      type: Number,
+      required: true,
+    },
+    newDistance: {
       type: Number,
       required: true,
     },
