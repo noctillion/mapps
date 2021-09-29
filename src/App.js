@@ -80,8 +80,6 @@ export default function App() {
     map: null,
   });
 
-  console.log(distance, "fffdistanmce");
-
   const chunk = (arr) => {
     const size = 2;
     const chunkedArray = [];
@@ -163,16 +161,7 @@ export default function App() {
     fetchD();
   }, []);
 
-  //const [activePark, setActivePark] = React.useState(null);
-
   const limeOptions = { color: "red" };
-
-  //let newRout = chunk(routedataD[0].shapePoints);
-  //let newRout = chunk(routedata.shapePoints);
-
-  //console.log(der);
-
-  //let letssee = cons(newRout);
 
   let valg = (dist, arr) => {
     let x = arr.filter((a, i) => {
@@ -190,53 +179,10 @@ export default function App() {
     return posti;
   };
 
-  /*  let valg = (dist) => {
-    let x = letssee.filter((a, i) => {
-      if (a.acum <= dist) {
-        return a;
-      } else {
-        return false;
-      }
-    });
-
-    let vaf = letssee[x.splice(-1).pop().id + 1];
-    const reco = vaf.p1.destinationPoint(vaf.acum - dist, vaf.b1);
-    const posti = Object.values(reco);
-
-    return posti;
-  }; */
-  /* 
-  let valgCD = (dist, letseeArr) => {
-    let x = letseeArr.filter((a, i) => {
-      if (a.acum <= dist) {
-        return a;
-      } else {
-        return false;
-      }
-    });
-
-    let vaf = letseeArr[x.splice(-1).pop().id + 1];
-    const reco = vaf.p1.destinationPoint(vaf.acum - dist, vaf.b1);
-    const posti = Object.values(reco);
-
-    return posti;
-  }; */
-
-  /*  useEffect(() => {
-    //setInitialSet({ ...initialSet, center: frty });
-    const { map } = initialSet;
-    if (map) map.flyTo(positionD, 9.5);
-  }, [distance]); */
-
   useEffect(() => {
     let remainD = Math.trunc(7432669.473190754 / 1000) - distance;
     setRemainingDista(remainD);
   }, [distance]);
-
-  /*  useEffect(() => {
-    let contrib = lastPoint.length;
-    setContribNu(contrib);
-  }, [lastPoint, contribNu]); */
 
   const Consolidate = async (data) => {
     const res = await fetch("http://localhost:8800/api/pins", {
@@ -270,11 +216,9 @@ export default function App() {
         tempDist = (Number(steps) / 1312) * 1000 + currDist;
       }
 
-      console.log(tempDist, "tempDisttempDist");
       setContribNu(lastPoint.length + 1);
       setDistance(Math.trunc((7432669.473190754 - tempDist) / 1000));
       let frty = valg(tempDist, letsseeM);
-      console.log(frty, "frtyfrty");
       setPositionD(frty);
       Consolidate({
         latlong: frty,
@@ -287,7 +231,6 @@ export default function App() {
     } else if (keyword !== "wounding") {
       alert("Please write the rigth keyword");
     }
-    console.log("dddeerrttAqui");
 
     setKeyword("");
     setSteps("");
